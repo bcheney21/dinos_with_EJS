@@ -1,0 +1,8 @@
+<h1>Creature Index Page</h1>
+<a href="/creatures/new">New Dino</a>
+
+<% creatures.forEach(creature => { %>
+    <div class="card">
+        <a href="/creatures/<%= creature.id %>"><%= creature.name %> the <%= creature.type %></a>
+    </div>
+<% }) %>
